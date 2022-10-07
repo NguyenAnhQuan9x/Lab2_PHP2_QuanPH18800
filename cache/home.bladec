@@ -1,0 +1,12 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title'); ?>
+ Trang chủ
+<?php $this->stopSection(); ?>
+<?php $this->startSection('content-title'); ?>
+ Trang chủ Thời trang Nữ
+<?php $this->stopSection(); ?>
+<?php $this->startSection('content'); ?>
+ <h2>Chào mừng bạn đến trang quản trị</h2>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layouts.master'); } ?>
